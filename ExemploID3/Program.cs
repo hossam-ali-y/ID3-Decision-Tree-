@@ -594,7 +594,7 @@ namespace ExemploID3
             System.Data.DataSet dtset = new DataSet();
             System.Data.OleDb.OleDbDataAdapter MyCommand;
                
-            xfile = "E:\\University Part2\\level4 Term2\\Data Mining\\Bank Data.xlsx";
+            xfile = "..\\..\\DataSet\\Bank Data.xlsx";
             MyConnection = new System.Data.OleDb.OleDbConnection(str1 + xfile + str2);
             MyCommand = new System.Data.OleDb.OleDbDataAdapter("select * from ["+"Banck Data"+"$A1:G] ", MyConnection);
                 //Console.WriteLine(MyCommand.SelectCommand);
@@ -614,7 +614,7 @@ namespace ExemploID3
         /// </summary>
         /// 
         [STAThread]
-
+         
         static void Main(string[] args)
         {
             Attribute x1 = new Attribute("Age", new string[] { "child", "young", "old" });
